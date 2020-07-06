@@ -147,7 +147,7 @@
             this.TxtGPA.Location = new System.Drawing.Point(341, 215);
             this.TxtGPA.Name = "TxtGPA";
             this.TxtGPA.Size = new System.Drawing.Size(83, 29);
-            this.TxtGPA.TabIndex = 8;
+            this.TxtGPA.TabIndex = 10;
             // 
             // TxtAge
             // 
@@ -155,7 +155,7 @@
             this.TxtAge.Location = new System.Drawing.Point(226, 215);
             this.TxtAge.Name = "TxtAge";
             this.TxtAge.Size = new System.Drawing.Size(59, 29);
-            this.TxtAge.TabIndex = 10;
+            this.TxtAge.TabIndex = 8;
             this.TxtAge.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // LblAge
@@ -208,6 +208,7 @@
             this.BtnCreate.TabIndex = 13;
             this.BtnCreate.Text = "Create";
             this.BtnCreate.UseVisualStyleBackColor = true;
+            this.BtnCreate.Click += new System.EventHandler(this.BtnCreate_Click);
             // 
             // LblID
             // 
@@ -297,6 +298,7 @@
             this.Controls.Add(this.LblTitle);
             this.Name = "FrmStudent";
             this.Text = "Student Class by Joseph Fischetti";
+            this.Load += new System.EventHandler(this.FrmStudent_Load);
             ((System.ComponentModel.ISupportInitialize)(this.NudGrade)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

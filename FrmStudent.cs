@@ -17,5 +17,15 @@ namespace StudentClass
             InitializeComponent();
         }
 
+        private void FrmStudent_Load(object sender, EventArgs e)
+        {
+            LbxStudents.Items.Clear();
+        }
+
+        private void BtnCreate_Click(object sender, EventArgs e)
+        {
+            Student student = new Student(TxtFirstName.Text, TxtLastName.Text, int.Parse(TxtAge.Text));
+            LbxStudents.Items.Add(student.ToString());
+        }
     }
 }
